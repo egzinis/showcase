@@ -106,7 +106,7 @@ function misc_module:update_table()
 	for i, player in ipairs(self.player_table) do
 		local character = player.Character
 		
-		--guard
+		--guard clauses
 		if not character then
 			table.remove(self.player_table, i)
 			

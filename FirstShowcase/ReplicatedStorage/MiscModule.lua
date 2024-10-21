@@ -42,8 +42,8 @@ function misc_module:fix_sounds()
 		self.set = true
 	end
 	
-	--run loop
-	self.root_part.Running.PlaybackSpeed = self.humanoid.WalkSpeed/26
+	--run loop (speed/32 becauuse 32 is the max speed so the playback goes from 0.5 - 1)
+	self.root_part.Running.PlaybackSpeed = self.humanoid.WalkSpeed/32
 end
 
 --player character reset to blocky appearance

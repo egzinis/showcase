@@ -30,7 +30,7 @@ function misc_module:fix_animations()
 	self.character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=98153773932736"
 	--self.character.Animate.jump.JumpAnim.AnimationId = ""
 	
-	--104879656486194 landing
+	--104879656486194 landing id
 end
 
 function misc_module:fix_sounds()
@@ -92,7 +92,7 @@ function misc_module:show_legs()
 	end
 end
 
---add each player to a table
+--add each player to a table, fixes performance, no need to call remote event each frame 
 function misc_module:update_table()
 	for _, player in ipairs(game:GetService("Players"):GetChildren()) do
 		--main
